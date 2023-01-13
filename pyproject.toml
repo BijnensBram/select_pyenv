@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "select-pyenv"
+version = "0.1.0"
+description = ""
+authors = ["BijnensBram <bram@bijnens.com>"]
+readme = "README.md"
+packages = [{include = "select_pyenv"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+tomlkit = "^0.11.6"
+pexpect = "^4.8.0"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^0.991"
+black = "^22.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+select_pyenv = "select_pyenv:select_pyenv"
